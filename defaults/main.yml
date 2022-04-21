@@ -7,7 +7,8 @@ sosreport_local_dir: ~/sosreport
 sosreport_remote_dir: /tmp/sosreport
 # Arguments to the sosreport command
 sosreport_args:
-  - --all-logs
   - --quiet
   - --batch
-  - --verify
+  - --profile memory,openstack_compute,performance
+  - --threads 1
+  - --since $(date -d yesterday '+%Y%m%d')

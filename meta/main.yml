@@ -1,10 +1,10 @@
 galaxy_info:
-  author: Grzegorz Adamiak
+  author: Federico Nebiolo
   description: >
-    Collect sosreport from remote hosts to a local folder on the controller.
-  company: Atos
+    Collect sosreport from remote hosts to a local folder on the controller, courtesly cloned from Grzegorz Adamiak
+  company: Red Hat
 
-  issue_tracker_url: https://github.com/gadamiak/sosreport/issues
+  issue_tracker_url: https://github.com/iconeb/sosreport/issues
 
   license: GPLv3
 
@@ -12,6 +12,7 @@ galaxy_info:
   platforms:
   - name: EL
     versions:
+    - 8
     - 7
     - 6
     - 5
