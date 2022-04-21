@@ -9,6 +9,6 @@ sosreport_remote_dir: /tmp/sosreport
 sosreport_args:
   - --quiet
   - --batch
-  - --profile memory,openstack_compute,performance
+  - --only-plugins host,release,grub2,memory,numa,processor,openstack_neutron,openstack_nova,tuned,kvm,libvirt,vhostmd
   - --threads 1
-  - --since $(date -d yesterday '+%Y%m%d')
+  - --since {{ lookup('pipe','date -d yesterday +%Y%m%d') }}
